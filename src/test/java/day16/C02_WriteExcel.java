@@ -14,8 +14,8 @@ public class C02_WriteExcel {
 
         //    WORKBOOK > SHEET  > ROW  > CELL > YAZ > KAYDET
         //    WORKBOOK (EXCEL DOSYASI) > WORKSHEET/SHEET(SAYFA) >ROW (SATIR)> CELL(VERI HUCRESI)
-        String path ="./src/test/java/resources/Capitals.xlsx";
-//        String path =".\\src\\test\\java\\resources\\Capitals.xlsx";//WINDOWS
+      //  String path ="./src/test/java/resources/Capitals.xlsx";//mac
+          String path =".\\src\\test\\java\\resources\\Capitals.xlsx";//WINDOWS
 
 //        DOSYAYI AC
         FileInputStream fileInputStream = new FileInputStream(path);
