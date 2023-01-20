@@ -1,5 +1,7 @@
 package day15;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,13 +21,16 @@ public class C02_WebTables extends TestBase {
 ////    Parameter 2 = column numarasi
 ////    printData(2,3);  => 2nd row, 3rd column daki datayı print etsin
 
+
+    private static Logger logger = LogManager.getLogger(C02_WebTables.class.getName());
     @Test
     public void table1Print(){
         //    https://the-internet.herokuapp.com/tables
         //    Task 1 : Table1’i print edin
         driver.get("https://the-internet.herokuapp.com/tables");
         String table1 = driver.findElement(By.xpath("//table[@id='table1']")).getText();
-        System.out.println("TABLE 1 VERILERI");
+     //   System.out.println("TABLE 1 VERILERI");
+        logger.info("TABLE 1 VERILERI");
         System.out.println(table1);
 
         //2.yol
